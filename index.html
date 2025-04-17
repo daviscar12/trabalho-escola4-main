@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaHoraDoCheckIn</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu siderbarOpen'></i>
+            <span class="logo navLogo"><a href="">NaHoraDoCheckIn</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><img src="assets/images/logo.png" alt=""></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Hoteis</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="darklight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x Cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Pesquise...">
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search-bar-content">
+        <img src="assets/images/pesquisa.png" alt="imagem de fundo" class="search-image">
+        <div class="search-bar-1">
+            <div class="search-content">
+                <div class="search-field-2">
+                    <label class="label-3" for="destino">Destino</label>
+                    <input type="text" id="destino" placeholder="Para onde?">
+                </div>
+
+                <div class="search-field-2">
+                    <label class="label-3" for="entrada">Entrada</label>
+                    <input type="date" id="entrada">
+                </div>
+
+                <div class="search-field-2">
+                    <label class="label-3" for="saida">Saída</label>
+                    <input type="date" id="saida">
+                </div>
+
+                <div class="search-field-2">
+                    <label class="label-3" for="hospedes">Hóspedes e Quartos</label>
+                    <select id="hospedes">
+                        <option value="1">1 hóspede, 1 quarto</option>
+                        <option value="2">2 hóspedes, 1 quarto</option>
+                        <option value="3">3 hóspedes, 1 quarto</option>
+                        <option value="4">4 hóspedes, 2 quartos</option>
+                    </select>
+                </div>
+
+                <button class="button-4" onclick="pesquisar()">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="container17">
+        <h2>Para viajantes profissionais</h2>
+        <div class="carrosel9">
+            <div class="card9">
+                <h3>Otimas ofertas</h3>
+                <p>Saiba quando economizar</p>
+                <img src="assets/images/card.png" alt="Relógio e economia">
+            </div>
+            <div class="card9">
+                <h3>Explore</h3>
+                <p>Encontre Hoteis que cabem no seu orçamento</p>
+                <img src="assets/images/card2.png" alt="Globo terrestre e lupa">
+            </div>
+            <div class="card9">
+                <h3>Trips</h3>
+                <p>Organize todos os seus planos em um só lugar</p>
+                <img src="assets/images/card3.png" alt="Mapa e viagem">
+            </div>
+            <div class="card9">
+                <h3>Alertas de Preço</h3>
+                <p>Saiba quando os preços mudarem</p>
+                <img src="assets/images/card4.png" alt="Celular e alertas">
+            </div>
+        </div>
+
+    </section>
+    <section class="sec7-destinos">
+        <h2>Destinos mais populares</h2>
+        <div class="cards7-destinos">
+            <div class="card7-destino">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuKf2trSHTY0kydzAR4waJ5yDHmGAbx9-og&s"
+                    alt="Rio de Janeiro">
+                <div class="info7-card">
+                    <h3>Rio de Janeiro</h3>
+                    <p>Sol, praia e diversão garantida.</p>
+                    <button><a href="Pagina_riojaneiro.html">Ver hotéis</a></button>
+                </div>
+            </div>
+            <div class="card7-destino">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwhf3ZhM8u5WX1n3W5EeaBE9pL954Vue8fBlrUB_DgpljMQCL9prJ_7J7oCtFyzC90d0&usqp=CAU" alt="Nova York">
+                <div class="info7-card">
+                    <h3>Nova York</h3>
+                    <p>Negócios, cultura e vida noturna.</p>
+                    <button><a href="Pagina_newyork.html">Ver Hotéis</a></button>
+                </div>
+            </div>
+            <div class="card7-destino">
+                <img src="https://www.metropolisidiomas.com.br/wp-content/uploads/2018/12/londres-metroplis-post.jpg" alt="Londres">
+                <div class="info7-card">
+                    <h3>Londres</h3>
+                    <p>Destino romântico.</p>
+                    <button>Ver hotéis</button>
+                </div>
+            </div>
+            <div class="card7-destino">
+                <img src="https://oficinadeinverno.com.br/cdn/shop/articles/eiffel-tower-sunrise1.jpg?v=1659494576" alt="Londres">
+                <div class="info7-card">
+                    <h3>Paris</h3>
+                    <p>Destino com a melhor culinaria.</p>
+                    <button>Ver hotéis</button>
+                </div>
+            </div>
+            <div class="card7-destino">
+                <img src="https://cdn5.tropicalsky.co.uk/images/800x600/kayaking-in-the-cays.jpg" alt="Londres">
+                <div class="info7-card">
+                    <h3>Bahamas</h3>
+                    <p>Destino romântico.</p>
+                    <button>Ver hotéis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="galeria">
+        <div class="item">
+          <img src="imagem1.jpg" alt="Imagem 1">
+          <div class="overlay">
+            <p>Texto sobre a imagem 1</p>
+            <button>Saiba mais</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagem2.jpg" alt="Imagem 2">
+          <div class="overlay">
+            <p>Texto sobre a imagem 2</p>
+            <button>Saiba mais</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagem3.jpg" alt="Imagem 3">
+          <div class="overlay">
+            <p>Texto sobre a imagem 3</p>
+            <button>Saiba mais</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagem4.jpg" alt="Imagem 4">
+          <div class="overlay">
+            <p>Texto sobre a imagem 4</p>
+            <button>Saiba mais</button>
+          </div>
+        </div>
+      </div>
+    
+    <footer class="footer8">
+        <div class="container8">
+            <p>&copy; NaHoraCheckIn. Todos os direitos reservados.</p>
+            <div class="social-media8">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
